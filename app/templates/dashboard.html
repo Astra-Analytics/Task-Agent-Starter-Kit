@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Task Dashboard</h1>
+    <h2>Agent Tasks</h2>
+    <ul id="agent-tasks">
+      {% for task in agent_tasks %}
+      <li>{{ task['name'] }}</li>
+      {% if task['potentialAction'] %}
+      <ul>
+        {% for subtask in task['potentialAction'] %}
+        <li>{{ subtask }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endfor %}
+    </ul>
+
+    <h2>Human Tasks</h2>
+    <ul id="human-tasks">
+      {% for task in human_tasks %}
+      <li>{{ task['name'] }}</li>
+      {% if task['potentialAction'] %}
+      <ul>
+        {% for subtask in task['potentialAction'] %}
+        <li>{{ subtask }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endfor %}
+    </ul>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+  </body>
+</html>

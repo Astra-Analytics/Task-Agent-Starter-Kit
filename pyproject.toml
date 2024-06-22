@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "tasker"
+version = "0.1.0"
+description = ""
+authors = ["Will Humble"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11.8"
+flask = "^3.0.3"
+google-auth = "^2.29.0"
+google-auth-oauthlib = "^1.2.0"
+google-auth-httplib2 = "^0.2.0"
+google-api-python-client = "^2.127.0"
+python-dotenv = "^1.0.1"
+nexus-python = "^0.3.1"
+ollama = "^0.2.0"
+colorlog = "^6.8.2"
+typeid-python = "^0.3.0"
+flask-sse = "^1.0.0"
+flask-socketio = "^5.3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

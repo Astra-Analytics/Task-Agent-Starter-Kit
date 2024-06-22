@@ -1,0 +1,63 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section titles */
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Task lists */
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+li {
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtask lists */
+ul ul {
+  margin-left: 20px;
+}
+
+ul ul li {
+  background: #f9f9f9;
+  margin: 3px 0;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+/* Links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

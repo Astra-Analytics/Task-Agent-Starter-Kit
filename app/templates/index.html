@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect to Gmail</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+      .g_id_signin {
+        display: flex;
+        justify-content: center;
+      }
+      .g-signin > div {
+        margin: 0 auto;
+      }
+    </style>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+  </head>
+  <body>
+    <div>
+      <h1>Task Agent Starter Kit with NexusDB</h1>
+      <div
+        id="g_id_onload"
+        data-client_id="{{ google_client_id }}"
+        data-login_uri="{{ url_for('main.authorize') }}"
+        style="display: none"
+      ></div>
+      <div
+        class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left"
+      ></div>
+    </div>
+  </body>
+</html>
