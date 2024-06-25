@@ -1,5 +1,36 @@
 # Task Agent Starter Kit with NexusDB
 
+![Task Dashboard](public/dashboard.png)
+
+## Table of Contents
+
+- [Task Agent Starter Kit with NexusDB](#task-agent-starter-kit-with-nexusdb)
+  - [Table of Contents](#table-of-contents)
+  - [Setup](#setup)
+    - [Connecting to Gmail](#connecting-to-gmail)
+      - [Step 1: Create a Project and Enable the Gmail API](#step-1-create-a-project-and-enable-the-gmail-api)
+      - [Step 2: Configure OAuth Consent Screen](#step-2-configure-oauth-consent-screen)
+      - [Step 3: Create Credentials](#step-3-create-credentials)
+    - [Configure The AI Models](#configure-the-ai-models)
+      - [Step 1: Install Ollama](#step-1-install-ollama)
+    - [Environment Variables](#environment-variables)
+      - [NexusDB API Key](#nexusdb-api-key)
+      - [Max Threads](#max-threads)
+      - [Initial Emails](#initial-emails)
+  - [Installation](#installation)
+  - [Running the app](#running-the-app)
+    - [Using Poetry Shell](#using-poetry-shell)
+    - [Using Poetry Run](#using-poetry-run)
+  - [Contributing](#contributing)
+  - [License](#license)
+    - [Non-Compete Open License](#non-compete-open-license)
+    - [Permissions](#permissions)
+    - [Conditions](#conditions)
+    - [Summary](#summary)
+  - [NexusDB](#nexusdb)
+    - [Earn 30% Commission on referrals](#earn-30-commission-on-referrals)
+    - [Partner with us](#partner-with-us)
+
 ## Setup
 
 To run this application there are a few items that must be set up separately:
